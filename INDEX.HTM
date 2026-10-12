@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રાધાસ્વામી એજ્યુકેશન ઇન્સ્ટિટ્યુટ - વિજયાદશમી ડિજિટલ સ્કિલ ફેસ્ટ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Hind Vadodara', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+        }
+        .badge-pulse {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+        .tab-btn.active {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            border-color: #3b82f6;
+            box-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.39);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <header class="hero-gradient text-white shadow-xl sticky top-0 z-50 border-b border-blue-700/50 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 py-3.5 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-amber-400 to-yellow-300 p-2.5 rounded-xl text-blue-950 shadow-lg">
+                    <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black tracking-wide bg-gradient-to-r from-white via-slate-100 to-amber-300 bg-clip-text text-transparent">
+                        રાધાસ્વામી એજ્યુકેશન ઇન્સ્ટિટ્યુટ
+                    </h1>
+                    <p class="text-xs text-blue-200 font-medium">મહિસાગરમાં ૧૬+ વર્ષથી ક્વોલિટી ડિજિટલ એજ્યુકેશનનો સબળ આધાર</p>
+                </div>
+            </div>
+            <a href="tel:8154800488" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-blue-950 font-bold px-5 py-2.5 rounded-xl shadow-md transition transform hover:-translate-y-0.5">
+                <i class="fa-solid fa-headset"></i> ડાયરેક્ટ કોલ કરો
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white py-10 px-4 text-center relative overflow-hidden shadow-lg">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto relative z-10 space-y-3">
+            <span class="inline-flex items-center gap-1.5 bg-slate-900/80 backdrop-blur text-amber-400 text-xs md:text-sm font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider badge-pulse border border-amber-400/30">
+                🚀 વિજયાદશમી સ્પેશિયલ કરિયર બૂસ્ટર ઓફર
+            </span>
+            <h2 class="text-3xl md:text-5xl font-black text-white tracking-tight drop-shadow-md">
+                દશેરા સ્કીલ અપગ્રેડેશન ધમાકા!
+            </h2>
+            <p class="text-base md:text-lg font-medium max-w-2xl mx-auto leading-relaxed text-amber-50">
+                આ શુભ પર્વ પર તમારી સ્કિલ્સને કરો અપગ્રેડ અને બનાવો <span class="text-slate-950 font-extrabold underline decoration-amber-300">ફ્યુચર-રેડી કરિયર!</span> <br>
+                તમામ હાઈ-ડિમાન્ડ આઈટી, યુનિવર્સિટી કોર્સીસ અને ગ્રાફિક ડીઝાઈનિંગ પર મેળવો <span class="font-bold text-white">વિશેષ સુપર ડિસ્કાઉન્ટ!</span>
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-4 mt-8 w-full">
+        <div class="flex flex-wrap md:flex-nowrap gap-3 border-b-2 border-slate-200 pb-2">
+            <button onclick="switchTab('dussehra-tab')" id="btn-dussehra-tab" class="tab-btn active flex-1 py-3 px-5 rounded-xl font-black text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 border border-slate-200 text-slate-700 bg-white hover:bg-slate-100">
+                <i class="fa-solid fa-gift text-amber-500"></i> દશેરા સ્પેશિયલ ઓફર કોર્સીસ
+            </button>
+            <button onclick="switchTab('medhavi-tab')" id="btn-medhavi-tab" class="tab-btn flex-1 py-3 px-5 rounded-xl font-black text-sm md:text-base transition-all duration-200 flex items-center justify-center gap-2 border border-slate-200 text-slate-700 bg-white hover:bg-slate-100">
+                <i class="fa-solid fa-building-columns text-emerald-600"></i> મેઘાવી યુનિ. કોર્સીસ (Medhavi Skills Uni.)
+            </button>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow space-y-12 w-full">
+
+        <!-- TAB 1: DUSSEHRA SPECIAL COURSES -->
+        <div id="dussehra-tab" class="tab-content space-y-10">
+
+            <!-- Table 1: Skill Courses -->
+            <section class="bg-white rounded-3xl shadow-md border border-slate-200/80 overflow-hidden">
+                <div class="bg-gradient-to-r from-slate-900 to-blue-900 text-white p-5 md:p-6 flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-laptop-code text-amber-400"></i> ૧. શોર્ટ-ટર્મ સ્કિલ એન્ડ ડિજિટલ કોર્સીસ
+                        </h3>
+                        <p class="text-xs text-slate-300 mt-1">ઝડપી જોબ ઓરિએન્ટેડ પ્રેક્ટિકલ ટ્રેનિંગ</p>
+                    </div>
+                    <span class="text-xs bg-amber-400 text-blue-950 font-extrabold px-3.5 py-1.5 rounded-full shadow-sm">
+                        ⚡ સીમિત સ્લોટ્સ બાકી
+                    </span>
+                </div>
+                
+                <div class="p-4 md:p-6 overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100/80 text-slate-700 uppercase text-xs tracking-wider border-b border-slate-200">
+                                <th class="p-3.5 text-center w-16">ક્રમ</th>
+                                <th class="p-3.5">કોર્સનું નામ</th>
+                                <th class="p-3.5 text-right line-through text-slate-400">રેગ્યુલર ફી</th>
+                                <th class="p-3.5 text-right text-emerald-600 font-extrabold">ઓફર ફી</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 font-medium text-sm md:text-base">
+                            <tr class="hover:bg-blue-50/50 transition">
+                                <td class="p-4 text-center text-slate-400 font-mono">01</td>
+                                <td class="p-4 font-bold text-slate-800">CCC <span class="text-xs text-slate-500 font-normal block md:inline md:ml-1">(કમ્પ્યુટર કોન્સેપ્ટ)</span></td>
+                                <td class="p-4 text-right text-slate-400 line-through">₹3,500</td>
+                                <td class="p-4 text-right text-emerald-600 font-black text-lg">₹1,999</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50/50 transition">
+                                <td class="p-4 text-center text-slate-400 font-mono">02</td>
+                                <td class="p-4 font-bold text-slate-800">Tally Prime <span class="text-xs text-slate-500 font-normal block md:inline md:ml-1">(GST એકાઉન્ટિંગ)</span></td>
+                                <td class="p-4 text-right text-slate-400 line-through">₹8,500</td>
+                                <td class="p-4 text-right text-emerald-600 font-black text-lg">₹2,499</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50/50 transition">
+                                <td class="p-4 text-center text-slate-400 font-mono">03</td>
+                                <td class="p-4 font-bold text-slate-800">Photoshop & Illustrator <span class="text-xs text-slate-500 font-normal block md:inline md:ml-1">(ગ્રાફિક ડિઝાઇન્સ)</span></td>
+                                <td class="p-4 text-right text-slate-400 line-through">₹6,500</td>
+                                <td class="p-4 text-right text-emerald-600 font-black text-lg">₹2,499</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50/50 transition">
+                                <td class="p-4 text-center text-slate-400 font-mono">04</td>
+                                <td class="p-4 font-bold text-slate-800">Video Editing <span class="text-xs bg-slate-200 text-slate-800 font-semibold px-2 py-0.5 rounded ml-1">DaVinci Resolve</span></td>
+                                <td class="p-4 text-right text-slate-400 line-through">₹6,500</td>
+                                <td class="p-4 text-right text-emerald-600 font-black text-lg">₹2,499</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Special Bonus Section -->
+            <section class="bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 text-white p-6 md:p-8 rounded-3xl shadow-xl relative overflow-hidden">
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2 text-center md:text-left">
+                        <div class="inline-flex items-center gap-2 bg-amber-400 text-slate-950 font-black text-xs uppercase px-3 py-1 rounded-full shadow">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> સ્પેશિયલ બૉનસ
+                        </div>
+                        <h3 class="text-2xl md:text-3xl font-black">IT Helpdesk કોર્સ તદ્દન ફ્રી!</h3>
+                        <p class="text-slate-100 max-w-2xl leading-relaxed text-sm md:text-base">
+                            કોઈપણ કોર્સમાં એન્રોલ કરવા પર <strong class="text-amber-300 font-black">ગુજરાત સરકાર માન્ય IT Helpdesk કોર્સ તદ્દન નિઃશુલ્ક!</strong>
+                        </p>
+                    </div>
+                    <a href="tel:8154800488" class="bg-white text-red-600 font-black px-6 py-3.5 rounded-2xl shadow-xl hover:bg-amber-300 hover:text-slate-950 transition whitespace-nowrap text-sm md:text-base flex items-center gap-2">
+                        હમણાં જ સીટ બુક કરો <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Table 2: Professional Diploma & Career Courses -->
+            <section class="bg-white rounded-3xl shadow-md border border-slate-200/80 overflow-hidden">
+                <div class="bg-gradient-to-r from-slate-900 to-blue-900 text-white p-5 md:p-6">
+                    <h3 class="text-xl md:text-2xl font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-amber-400"></i> ૨. પ્રોફેશનલ કરિયર અને ડિપ્લોમા કોર્સીસ
+                    </h3>
+                    <p class="text-xs text-blue-200 mt-1">100% જોબ-રેડી પોર્ટફોલિયો અને પ્લેસમેન્ટ આસિસ્ટન્સ સાથે</p>
+                </div>
+                
+                <div class="p-4 md:p-6 overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100/80 text-slate-700 uppercase text-xs tracking-wider border-b border-slate-200">
+                                <th class="p-3.5 text-center w-16">ક્રમ</th>
+                                <th class="p-3.5">કોર્સનું નામ</th>
+                                <th class="p-3.5 text-right line-through text-slate-400">રેગ્યુલર ફી</th>
+                                <th class="p-3.5 text-right text-emerald-600 font-extrabold">ઓફર ફી</th>
+                                <th class="p-3.5 text-right text-blue-600 font-semibold">એક્ઝામ ફી</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 font-medium text-sm md:text-base">
+                            <tr class="hover:bg-blue-50/50 transition">
+                                <td class="p-4 text-center text-slate-400 font-mono">01</td>
+                                <td class="p-4 font-bold text-slate-800">DCA <span class="text-xs text-blue-600 font-semibold">(UGC University)</span></td>
+                                <td class="p-4 text-right text-slate-400 line-through">₹25,500</td>
+                                <td class="p-4 text-right text-emerald-600 font-black text-lg">₹17,650</td>
+                                <td class="p-4 text-right text-slate-700 font-semibold">₹2,000</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50/50 transition">
+                                <td class="p-4 text-center text-slate-400 font-mono">02</td>
+                                <td class="p-4 font-bold text-slate-800">DCA <span class="text-xs text-blue-600 font-semibold">(RS Certification)</span></td>
+                                <td class="p-4 text-right text-slate-400 line-through">₹18,500</td>
+                                <td class="p-4 text-right text-emerald-600 font-black text-lg">₹12,499</td>
+                                <td class="p-4 text-right text-slate-700 font-semibold">₹300</td>
+                            </tr>
+                            <tr class="hover:bg-blue-50/50 transition">
+                                <td class="p-4 text-center text-slate-400 font-mono">03</td>
+                                <td class="p-4 font-bold text-slate-800">Certificate in Graphics Design</td>
+                                <td class="p-4 text-right text-slate-400 line-through">₹16,500</td>
+                                <td class="p-4 text-right text-emerald-600 font-black text-lg">₹12,499</td>
+                                <td class="p-4 text-right text-slate-700 font-semibold">₹300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-slate-50 border-t border-slate-200 p-5 md:p-6 text-slate-700">
+                    <h4 class="font-bold text-blue-950 flex items-center gap-2 mb-1.5 text-sm md:text-base">
+                        <i class="fa-solid fa-award text-amber-500 text-lg"></i> સ્માર્ટ સર્ટિફિકેશન એડવાન્ટેજ:
+                    </h4>
+                    <p class="text-xs md:text-sm leading-relaxed text-slate-600">
+                        નિયમો અને યોગ્યતા મુજબ <strong class="text-slate-800">UGC-માન્ય યુનિવર્સિટી, DigiLocker વેરિફાઈડ અને એકેડેમિક બેંક ઓફ ક્રેડિટ્સ (ABC)</strong> સંબંધિત પ્રમાણપત્ર સુવિધાઓ ઉપલબ્ધ.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- TAB 2: MEDHAVI SKILLS UNIVERSITY COURSES -->
+        <div id="medhavi-tab" class="tab-content hidden space-y-10">
+
+            <section class="bg-gradient-to-r from-emerald-800 via-teal-900 to-slate-900 text-white p-6 md:p-8 rounded-3xl shadow-lg border border-emerald-500/30">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 bg-emerald-400 text-slate-950 font-black text-xs uppercase px-3 py-1 rounded-full shadow mb-2">
+                            <i class="fa-solid fa-certificate"></i> Govt. Recognized NEP & NSQF Aligned
+                        </div>
+                        <h2 class="text-2xl md:text-4xl font-black text-amber-300">
+                            Medhavi Skills University
+                        </h2>
+                        <p class="text-emerald-100 text-sm md:text-base mt-1">
+                            New Education Policy (NEP) NSQF Course with <strong>DigiLocker Verification & Credit Facility</strong>
+                        </p>
+                    </div>
+                    <div class="text-center md:text-right bg-white/10 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 shrink-0">
+                        <span class="block text-xs text-emerald-200 font-semibold uppercase">લાયકાત Qualification</span>
+                        <span class="text-lg font-black text-white">10+2 / 12th Pass</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comprehensive Discount Table Section -->
+            <section class="bg-white rounded-3xl shadow-md border border-slate-200/80 overflow-hidden">
+                <div class="bg-gradient-to-r from-slate-900 to-emerald-900 text-white p-5 md:p-6 flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold flex items-center gap-2">
+                            <i class="fa-solid fa-percent text-amber-400"></i> મેઘાવી યુનિ. સ્પેશિયલ ડિસ્કાઉન્ટ ફી સ્ટ્રક્ચર
+                        </h3>
+                        <p class="text-xs text-emerald-200 mt-1">EMI Payment (15% OFF) અને One Shot Payment (25% OFF) ની વિગત</p>
+                    </div>
+                    <span class="text-xs bg-amber-400 text-slate-950 font-black px-3.5 py-1.5 rounded-full shadow-sm">
+                        🔥 અપ ટુ 25% સેવિંગ્સ
+                    </span>
+                </div>
+
+                <div class="p-4 md:p-6 overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100/90 text-slate-800 uppercase text-xs tracking-wider border-b border-slate-200">
+                                <th class="p-3.5 text-center w-12">No.</th>
+                                <th class="p-3.5 min-w-[240px]">Medhavi Skill University Course</th>
+                                <th class="p-3.5 text-center">Duration</th>
+                                <th class="p-3.5 text-right">Total Fee</th>
+                                <th class="p-3.5 text-right">Exam Fee</th>
+                                <th class="p-3.5 text-right text-indigo-700 bg-indigo-50/80 font-bold">EMI Discount (15%)</th>
+                                <th class="p-3.5 text-right text-emerald-700 bg-emerald-50/80 font-extrabold">One S. Discount (25%)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 font-medium text-xs md:text-sm">
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-3.5 text-center text-slate-400 font-mono">1</td>
+                                <td class="p-3.5 font-bold text-slate-900">Professional Diploma in Computer Applications Skills</td>
+                                <td class="p-3.5 text-center text-slate-600">12 Month</td>
+                                <td class="p-3.5 text-right font-semibold text-slate-700">₹25,500</td>
+                                <td class="p-3.5 text-right text-slate-500">₹1,500</td>
+                                <td class="p-3.5 text-right font-bold text-indigo-700 bg-indigo-50/40">₹21,675</td>
+                                <td class="p-3.5 text-right font-black text-emerald-600 bg-emerald-50/40 text-base">₹19,125</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-3.5 text-center text-slate-400 font-mono">2</td>
+                                <td class="p-3.5 font-bold text-slate-900">Certificate in Computer Hardware and Networking</td>
+                                <td class="p-3.5 text-center text-slate-600">6 Month</td>
+                                <td class="p-3.5 text-right font-semibold text-slate-700">₹22,500</td>
+                                <td class="p-3.5 text-right text-slate-500">₹2,000</td>
+                                <td class="p-3.5 text-right font-bold text-indigo-700 bg-indigo-50/40">₹19,125</td>
+                                <td class="p-3.5 text-right font-black text-emerald-600 bg-emerald-50/40 text-base">₹16,875</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-3.5 text-center text-slate-400 font-mono">3</td>
+                                <td class="p-3.5 font-bold text-slate-900">Certificate in Advanced Accounting with Tally ERP</td>
+                                <td class="p-3.5 text-center text-slate-600">6 Month</td>
+                                <td class="p-3.5 text-right font-semibold text-slate-700">₹22,500</td>
+                                <td class="p-3.5 text-right text-slate-500">₹2,000</td>
+                                <td class="p-3.5 text-right font-bold text-indigo-700 bg-indigo-50/40">₹19,125</td>
+                                <td class="p-3.5 text-right font-black text-emerald-600 bg-emerald-50/40 text-base">₹16,875</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-3.5 text-center text-slate-400 font-mono">4</td>
+                                <td class="p-3.5 font-bold text-slate-900">Certificate in Computer Applications</td>
+                                <td class="p-3.5 text-center text-slate-600">7 Month</td>
+                                <td class="p-3.5 text-right font-semibold text-slate-700">₹21,500</td>
+                                <td class="p-3.5 text-right text-slate-500">₹1,500</td>
+                                <td class="p-3.5 text-right font-bold text-indigo-700 bg-indigo-50/40">₹18,275</td>
+                                <td class="p-3.5 text-right font-black text-emerald-600 bg-emerald-50/40 text-base">₹16,125</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-3.5 text-center text-slate-400 font-mono">5</td>
+                                <td class="p-3.5 font-bold text-slate-900">Certificate in Graphic Designing</td>
+                                <td class="p-3.5 text-center text-slate-600">7 Month</td>
+                                <td class="p-3.5 text-right font-semibold text-slate-700">₹18,500</td>
+                                <td class="p-3.5 text-right text-slate-500">₹2,000</td>
+                                <td class="p-3.5 text-right font-bold text-indigo-700 bg-indigo-50/40">₹15,725</td>
+                                <td class="p-3.5 text-right font-black text-emerald-600 bg-emerald-50/40 text-base">₹13,875</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition">
+                                <td class="p-3.5 text-center text-slate-400 font-mono">6</td>
+                                <td class="p-3.5 font-bold text-slate-900">Certificate in Web Designing and Multimedia</td>
+                                <td class="p-3.5 text-center text-slate-600">6 Month</td>
+                                <td class="p-3.5 text-right font-semibold text-slate-700">₹25,000</td>
+                                <td class="p-3.5 text-right text-slate-500">₹2,000</td>
+                                <td class="p-3.5 text-right font-bold text-indigo-700 bg-indigo-50/40">₹21,675</td>
+                                <td class="p-3.5 text-right font-black text-emerald-600 bg-emerald-50/40 text-base">₹19,125</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="bg-white rounded-3xl p-6 md:p-8 shadow-sm border border-slate-200">
+            <h3 class="text-base md:text-lg font-bold text-slate-900 border-b pb-3 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-blue-600"></i> ઓફર માર્ગદર્શિકા અને નિયમો
+            </h3>
+            <ul class="space-y-2.5 text-slate-600 text-xs md:text-sm leading-relaxed">
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1"></i>
+                    <span>આ વિશેષ ડિસ્કાઉન્ટ ઓફર માત્ર મર્યાદિત સમય અને બેચ સ્લોટ્સ માટે જ માન્ય રહેશે.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1"></i>
+                    <span>સ્કીમ લાભ મેળવવા માટે સંપૂર્ણ કોર્સ ફી એકસાથે ચુકવવી જરૂરી રહેશે.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1"></i>
+                    <span>જ્યાં અલગથી પરીક્ષા ફી દર્શાવેલ છે તે નિયમાનુસાર અલગથી ચૂકવવાની રહેશે.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1"></i>
+                    <span>વિદ્યાર્થીઓને 100% કરિયર અને જોબ પ્લેસમેન્ટ આસિસ્ટન્સ પૂરૂ પાડવામાં આવશે.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="hero-gradient text-white p-8 md:p-12 rounded-3xl shadow-2xl flex flex-col md:flex-row justify-between items-center gap-8 border border-blue-600/30">
+            <div class="space-y-5 max-w-2xl text-center md:text-left">
+                <div>
+                    <span class="text-xs uppercase font-extrabold text-amber-400 tracking-wider">સંપર્ક કરો</span>
+                    <h3 class="text-2xl md:text-3xl font-black text-white mt-1">
+                        રાધાસ્વામી એજ્યુકેશન ઇન્સ્ટિટ્યુટ
+                    </h3>
+                    <p class="text-blue-200 text-xs md:text-sm mt-1">
+                        મહિસાગર જિલ્લામાં ૧૬+ વર્ષથી ૪૫૦૦+ સફળ વિદ્યાર્થીઓનો ભરોસો!
+                    </p>
+                </div>
+
+                <div class="space-y-3 text-sm text-left border-t border-blue-800/80 pt-4">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-location-dot text-amber-400 text-lg mt-1 shrink-0"></i>
+                        <div>
+                            <strong class="block text-white font-bold">સરનામું:</strong>
+                            બીજો માળ, ગીતા કૉમ્પ્લેક્ષની ઉપર, ગોધરા રોડ, લુણાવાડા – 389230, જિ. મહિસાગર, ગુજરાત
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-phone text-amber-400 text-lg mt-1 shrink-0"></i>
+                        <div>
+                            <strong class="block text-white font-bold">હેલ્પલાઇન નંબર:</strong>
+                            <a href="tel:8154800488" class="hover:text-amber-300 font-bold underline">81548 00488</a> | 
+                            <a href="tel:8154890481" class="hover:text-amber-300 font-bold underline">81548 90481</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-building-columns text-amber-400 text-lg mt-1 shrink-0"></i>
+                        <div>
+                            <strong class="block text-white font-bold">સંચાલન:</strong>
+                            રાધાસ્વામી એજ્યુકેશન ટ્રસ્ટ <span class="text-blue-300 text-xs">(Reg. No: F/3820/PMS)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-auto flex flex-col gap-3 text-center">
+                <a href="tel:8154800488" class="bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-blue-950 font-black py-4 px-8 rounded-2xl shadow-xl flex items-center justify-center gap-3 transition transform hover:-translate-y-1 text-base md:text-lg">
+                    <i class="fa-solid fa-phone-volume text-xl"></i> હમણાં કોલ કરો
+                </a>
+                <p class="text-xs text-blue-200">વેકેન્સી અને સીટ વેરિફિકેશન માટે આજે જ સંપર્ક કરો.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-6 text-center text-xs border-t border-slate-900 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 space-y-1.5">
+            <p>© ૨૦૨૬ રાધાસ્વામી એજ્યુકેશન ઇન્સ્ટિટ્યુટ, લુણાવાડા. સર્વાધિકાર સુરક્ષિત.</p>
+            <p class="text-slate-500">મહિસાગર જિલ્લામાં કમ્પ્યુટર એજ્યુકેશન ક્ષેત્રે અગ્રણી સંસ્થા</p>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Remove active style from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected tab content
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Set active class on clicked button
+            document.getElementById('btn-' + tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
